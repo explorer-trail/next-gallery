@@ -14,7 +14,13 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body>{children}</body>
+      <body>
+        <nav>
+          <div>Gallery</div>
+          <div>Sign In</div>
+        </nav>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
